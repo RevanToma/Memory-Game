@@ -17,6 +17,7 @@ let maxGuesses = 10;
 
 function play() {
 
+
     if (board) return;
     if (this === firstCard) return;
 
@@ -53,6 +54,7 @@ function disableCards() {
 }
 function unflipCards() {
     board = true;
+
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
@@ -84,6 +86,7 @@ function resetBoard() {
 
 function gameOver() {
     if (score === 8) {
+        maxGuess.style.visibility = 'hidden';
         result.textContent = 'Congrats! you found all cards!';
         playAgain();
 
@@ -97,6 +100,8 @@ function playAgain() {
         location.reload();
     });
 }
+
+
 
 cards.forEach(card => card.addEventListener('click', play));
 

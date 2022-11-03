@@ -52,6 +52,7 @@ body {
     padding: 20px;
     position: absolute;
     backface-visibility: hidden;
+    border-radius: 50%;
 
 }
 
@@ -96,4 +97,9 @@ button {
 button:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.hardMode {
+    position: absolute;
+    bottom: 100%;
 }
