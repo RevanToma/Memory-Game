@@ -6,13 +6,9 @@
 
 body {
     height: 100vh;
-    /* text-align: center; */
+    width: 100%;
     display: flex;
     background: rgb(130, 6, 31);
-
-
-
-
 
 }
 
@@ -23,6 +19,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+
 
 }
 
@@ -81,7 +78,7 @@ body {
 }
 
 .maxGuess {
-    margin: 0 7em;
+    margin: 0 6em;
 }
 
 button {
@@ -102,4 +99,24 @@ button:hover {
 .hardMode {
     position: absolute;
     bottom: 100%;
+}
+
+@media (max-width: 850px) {
+
+    .memory-game {
+        width: 100%;
+
+    }
+
+    .score {
+        top: 0;
+        left: 0;
+
+    }
+
+    .maxGuess {
+        margin: 1em 0.5em;
+
+    }
+
 }
